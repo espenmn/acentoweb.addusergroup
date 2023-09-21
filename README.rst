@@ -36,28 +36,10 @@ Adds new users automatically to groups
 Features
 --------
 
-- Can be bullet points
+- Adds settings to the medialog control panel
+- the Group settings will add all users to these groups on login
 
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+ 
 
 
 Installation
@@ -79,15 +61,9 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+Espen Moe-Nilssen
 
-
-Contributors
-------------
-
-Put your name here, you deserve it!
-
-- ?
+ 
 
 
 Contribute
