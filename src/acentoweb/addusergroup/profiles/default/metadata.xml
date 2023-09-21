@@ -2,5 +2,6 @@
 <metadata>
   <version>1000</version>
   <dependencies>
-    <dependency>profile-medialog-controlpanel:default</dependency>
+    <dependency>profile-medialog.controlpanel:default</dependency>
+  </dependencies>
 </metadata>

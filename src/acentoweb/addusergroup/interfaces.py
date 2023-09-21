@@ -24,15 +24,14 @@ class IUserGroupSettings(model.Schema):
 
     model.fieldset(
         'usergroups',
-        label=_(u'User Groups'),
+        label=(u'User Groups'),
         fields=[
             'usergroup',
             ],
-        )
+    )
  
     usergroup = schema.Tuple(
-        title = _(u"User Group",
-            default=u"Table Column fields to be used for actions overview Table / View"),
+        title = u"User Group",
             value_type=schema.Text(),
     )
 
