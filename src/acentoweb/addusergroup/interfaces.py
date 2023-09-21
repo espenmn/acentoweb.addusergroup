@@ -32,7 +32,12 @@ class IUserGroupSettings(model.Schema):
  
     usergroup = schema.Tuple(
         title = u"User Group",
-            value_type=schema.Text(),
+        required=False, 
+        missing_value=(),
+        value_type=schema.Choice(
+            title='Group to add users to',
+            vocabulary= "plone.app.vocabularies.Groups",        
+        ),
     )
 
 

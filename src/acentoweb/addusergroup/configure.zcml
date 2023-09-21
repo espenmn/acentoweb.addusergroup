@@ -42,9 +42,8 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-  <subscriber
-        for="zope.interface.Interface
-             Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
+    <subscriber
+        for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
         handler=".event_subscribers.add_user_to_group"
         />
 
