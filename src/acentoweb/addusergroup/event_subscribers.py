@@ -18,7 +18,9 @@ def add_user_to_group(event):
         for group in groups:
             import pdb; pdb.set_trace()
             if not group in user_id.getGroups():
-                api.group.add_user(groupname=group, user=user_id)
+
+                a = 1
+                #api.group.add_user(groupname=group, user=user_id)
 
     return True
             
