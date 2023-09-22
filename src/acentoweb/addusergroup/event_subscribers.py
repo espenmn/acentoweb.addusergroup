@@ -16,6 +16,7 @@ def add_user_to_group(event):
         #if user_id.getProperty('login_time').year() < 2020:
         # user_id.getGroups()
         for group in groups:
+            import pdb; pdb.set_trace()
             if not group in user_id.getGroups():
                 api.group.add_user(groupname=group, user=user_id)
 
