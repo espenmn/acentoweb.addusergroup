@@ -12,7 +12,7 @@ def add_user_to_group(event):
     # Python 2.7 gave unicode error for empty setting, so this is a hack around.
 
     try:
-        groups =   api.portal.get_registry_record('usergroup', interface=IUserGroupSettings)
+        groups =   api.portal.get_registry_record('usergroup', interface=IUserGroupSettings, default=None)
     
         # Add the user to the groups
         if groups:
