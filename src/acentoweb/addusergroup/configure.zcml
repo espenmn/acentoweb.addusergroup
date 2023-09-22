@@ -43,7 +43,7 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <subscriber
-        for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
+        for="Products.PlonePAS.events.IUserInitialLoginInEvent"
         handler=".event_subscribers.add_user_to_group"
         />
 
