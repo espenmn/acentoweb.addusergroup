@@ -9,18 +9,18 @@ def add_user_to_group(event):
     # Get the user id
     user_id =  api.user.get_current()
 
-    groups =   api.portal.get_registry_record('usergroup', interface=IUserGroupSettings)
+    # Python 2.7 gave unicode error for empty setting, so this is a hack around.
 
-    # Add the user to the groups
-    if groups:
-        #if user_id.getProperty('login_time').year() < 2020:
-        # user_id.getGroups()
-        for group in groups:
-            import pdb; pdb.set_trace()
-            if not group in user_id.getGroups():
+    try:
+        groups =   api.portal.get_registry_record('usergroup', interface=IUserGroupSettings)
+    
+        # Add the user to the groups
+        if groups:
+            for group in groups:
+                if not group in user_id.getGroups():
+                    api.group.add_user(groupname=group, user=user_id)
 
-                a = 1
-                #api.group.add_user(groupname=group, user=user_id)
+    except KeyError: 
+        pass
 
-    return True
             

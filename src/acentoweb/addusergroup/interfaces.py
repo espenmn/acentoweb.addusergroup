@@ -8,10 +8,10 @@ from z3c.form import interfaces
 from zope import schema
 from zope.interface import alsoProvides
 from plone.supermodel import model
-from plone.autoform.directives import widget
+#from plone.autoform.directives import widget
 
 from medialog.controlpanel.interfaces import IMedialogControlpanelSettingsProvider
-from plone.app.z3cform.widget import SelectFieldWidget
+#from plone.app.z3cform.widget import SelectFieldWidget
 
 class IAcentowebAddusergroupLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
@@ -35,7 +35,7 @@ class IUserGroupSettings(model.Schema):
         required=False, 
         missing_value=(),
         value_type=schema.Choice(
-            title='Group to add users to',
+            title=u"Group to add users to",
             vocabulary= "plone.app.vocabularies.Groups",        
         ),
     )

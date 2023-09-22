@@ -35,10 +35,10 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-    <!--subscriber
+    <subscriber
         for="Products.PlonePAS.events.IUserInitialLoginInEvent"
         handler=".event_subscribers.add_user_to_group"
-        /-->
+        />
 
 
 </configure>
